@@ -1,12 +1,12 @@
 import React from 'react'
 import ButtonList from './ButtonList'
-import VideoContaner from './VideoContaner'
+import VideoContainer from './VideoContainer'
 
 const MainContainer = () => {
   return (
     <div className='col-span-11'>
       <ButtonList/>
-      <VideoContaner/>
+      <VideoContainer/>
     </div>
   )
 }

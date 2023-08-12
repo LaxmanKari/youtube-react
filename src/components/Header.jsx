@@ -1,8 +1,7 @@
 import React from "react";
-import logo from "../assests/youtube-icon.jpg";
+import logo from "../assests/YouTube-Logo-New.jpg";
 import hamburgerIcon from "../assests/hamberg-icon.png";
 import userIcon from "../assests/user-icon.jpg";
-import searchIcon from "../assests/search-icon.png";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 
@@ -15,19 +14,17 @@ const Header = () => {
   }
 
   return (
-    <div className="grid grid-flow-col py-1 m-2 shadow-lg">
+    <div className="grid grid-flow-col py-1 my-2 shadow-lg ">
       <div className="flex col-span-1 ">
         <img
           onClick={() => toggleMenuHandler()}
-          className="h-12 cursor-pointer"
+          className="h-10 pt-3 pl-2 cursor-pointer"
           alt="menu"
           src={hamburgerIcon}
         />
         <a>
-        <img className="h-12 mx-2" alt="app-icon" src={logo} />
+        <img className="h-14 mx-2" alt="app-icon" src={logo} />
         </a>
-       
-        <h1 className="font-bold pt-3 text-lg">Youtube</h1>
       </div>
 
       <div className="col-span-10 px-10">
